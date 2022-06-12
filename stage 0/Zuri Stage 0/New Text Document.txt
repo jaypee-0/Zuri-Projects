@@ -1,0 +1,95 @@
+What Is Semantic HTML?
+
+Semantic HTML or semantic markup is HTML that introduces meaning to the web page rather than just presentation. For example, a <p> tag indicates that the enclosed text is a paragraph. This is both semantic and presentational because people know what paragraphs are, and browsers know how to display them.
+On the flip side of this equation, tags such as <b> and <i> are not semantic. They define only how the text should look (bold or italic), and don't provide any additional meaning to the markup.
+
+Examples of semantic HTML tags include:
+Header tags <h1> through <h6>
+<blockquote>
+<code>
+<em>
+
+Why You Should Care About Semantics
+The benefit of writing semantic HTML stems from what should be the driving goal of any web page: the desire to communicate. By adding semantic tags to your document, you provide additional information about that document, which aids in communication. Specifically, semantic tags make it clear to the browser what the meaning of a page and its content is. That clarity is also communicated with search engines, ensuring that the right pages are delivered for the right queries.
+
+Semantic HTML tags provide information about the contents of those tags that goes beyond just how they look on a page. Text that is enclosed in the <code> tag is immediately recognized by the browser as some type of coding language. Instead of trying to render that code, the browser understands that you are using that text as an example of the code for the purposes of an article or online tutorial.
+
+Using semantic tags gives you many more hooks for styling your content, too. Perhaps today you prefer to have your code samples display in the default browser style, but tomorrow, you might want to call them out with a gray background color; later still, you might want to define the precise mono-spaced font family or font stack to use for your samples. You can do all of these things easily by using semantic markup and smartly applied CSS.
+
+<blockquote> — For indenting text that is not a quotation. This is because blockquotes are indented by default.
+h1, h2, h3, h4, h5, and h6 — You can use heading tags to make fonts bigger and bolder, but if the text is not a heading, use the font-weight and font-size CSS properties instead.
+
+##Basic Tags
+<html> </html>
+Creates an HTML document
+<head> </head>
+Sets off the title & other info that isn't displayed
+<body> </body>
+Sets off the visible portion of the document
+<title> </title>
+Puts name of the document in the title bar; when
+bookmarking pages, this is what is bookmarked
+
+##Text Tags
+<pre> </pre>
+Creates preformatted text
+<h1> </h1> --> <h6> </h6>
+Creates headlines -- H1=largest, H6=smallest
+<b> </b>
+Creates bold text (should use <strong> instead)
+<i> </i>
+Creates italicized text (should use <em> instead)
+<tt> </tt>
+Creates typewriter-style text
+<code> </code>
+Used to define source code, usually monospace
+<cite> </cite>
+Creates a citation, usually processed in italics
+<address> </address>
+Creates address section, usually processed in italics
+<em> </em>
+Emphasizes a word (usually processed in italics)
+<strong> </strong>
+Emphasizes a word (usually processed in bold)
+
+##Links
+<a href="URL">clickable text</a>
+Creates a hyperlink to a Uniform Resource Locator
+<a href="mailto:EMAIL_ADDRESS">clickable text</a>
+Creates a hyperlink to an email address
+<a name="NAME">
+Creates a target location within a document
+<a href="#NAME">clickable text</a>
+Creates a link to that target location
+
+##Formatting
+<p> </p>
+Creates a new paragraph
+<br>
+AInserts a line break (carriage return)
+<blockquote> </blockquote>
+Puts content in a quote - indents text from both sides
+<div> </div>
+Used to format block content with CSS
+<span> </span>
+Used to format inline content with CSS
+Lists
+<ul> </ul>
+Creates an unordered list
+<ol> </ol>
+Creates an ordered list 
+<li> </li>
+Encompasses each list item
+<dl> </dl>
+Creates a definition list
+<dt>
+ Precedes eachdefintion term
+<dd>
+
+##Graphical elements
+<hr>
+Inserts a horizontal rule
+<hr noshade>
+Creates a horizontal rule without a shadow
+<img src="URL" />
+Adds image; it is a separate file located at the URL
